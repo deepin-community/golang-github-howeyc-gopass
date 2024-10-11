@@ -1,5 +1,43 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-howeyc-gopass (0.0~git20190910.7cb4b85+dfsg.1-1) unstable; urgency=medium
 
-  * Initial release
+  [ Taowa Munene-Tardif ]
+  * Team upload.
+  * Updated package to latest commit available on GitHub.
+  * Added upstream contact info to d/copyright.
+  * Added the default Go AutoPkgTest.
+  * Set Rules-Requires-Root.
+  * Made the package description more useful.
+  * Dropped debian/watch, the author is clearly not planning a release.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Jelmer Vernooij (via the Debian Janitor) ]
+  * Updated standards-version, declaring compliance with 4.5.0.
+  * Updated d/copyright to use HTTPS.
+  * Added upstream metadata.
+
+ -- Taowa Munene-Tardif <taowa@debian.org>  Sun, 26 Apr 2020 16:00:00 -0400
+
+golang-github-howeyc-gopass (0.0~git20160303.0.66487b2-2) unstable; urgency=low
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Nicolas Braud-Santoni ]
+  * Switch to debhelper 12.
+    Compatibility level now controlled with a Build-Depends
+  * debian/control
+    + Update uploader's email address
+    + Declare compliance with policy v4.3.0.
+      Priority `extra` replaced with `optional`
+
+ -- Nicolas Braud-Santoni <nicoo@debian.org>  Wed, 13 Feb 2019 00:15:25 +0100
+
+golang-github-howeyc-gopass (0.0~git20160303.0.66487b2-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Team Upload.
+  * Replace Vcs-Git by secure (https) URL.
+
+  [ Nicolas Braud-Santoni ]
+  * Initial release (Closes: 819931)
+
+ -- Alexandre Viau <aviau@debian.org>  Wed, 29 Jun 2016 20:53:44 +0200

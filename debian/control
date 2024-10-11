@@ -1,15 +1,26 @@
-Source: template-repository
-Section: unknown
+Source: golang-github-howeyc-gopass
+Section: devel
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Nicolas Braud-Santoni <nicoo@debian.org>
+Rules-Requires-Root: no
+Testsuite: autopkgtest-pkg-go
+Build-Depends: debhelper-compat (= 12),
+               dh-golang,
+               golang-go,
+               golang-golang-x-crypto-dev
+Standards-Version: 4.5.0
+Homepage: https://github.com/howeyc/gopass
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-howeyc-gopass
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-howeyc-gopass.git
+XS-Go-Import-Path: github.com/howeyc/gopass
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: golang-github-howeyc-gopass-dev
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         golang-go,
+         golang-golang-x-crypto-dev
+Description: getpasswd for Go
+ Retrieve password from user terminal or piped input without echo.
+ Caution: Multi-byte characters not supported!
